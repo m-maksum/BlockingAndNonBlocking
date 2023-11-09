@@ -7,6 +7,9 @@ import java.util.Scanner;
 
 public class BlockingClient {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nInput Name: ");
+        String namaClient = sc.nextLine();
         try {
             // Membuat koneksi ke server dengan alamat localhost (127.0.0.1) dan port 12345
             Socket socket = new Socket("localhost", 12345);
